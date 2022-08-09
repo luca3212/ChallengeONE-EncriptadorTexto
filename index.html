@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Externa - Inter - Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/jpg" href="/imagenes/Vector.png"/>
+    <title>Alura Challenge | Desafío 1</title>
+</head>
+<body>
+    <main>
+        <section class="principal">
+            <div class="logo-header">
+                <h1><img src="imagenes/Vector.png" alt=""></h1>
+            </div>
+            <div class="contenido-form">
+                <form>
+                    <div>
+                        <input type="text" id="textoUsuario" placeholder="Ingrese el texto aqui" autocomplete="off">
+                    </div>
+
+                    <div class="botones-accion">
+                        <span class="texto-condicion">
+                            <img src="imagenes/Group.svg" alt="">
+                            <p>Solo letras minúsculas y sin acentos</p>
+                        </span>
+                       
+                            <button id="btonEncriptar" class="boton-primario" type="button">Encriptar</button><button id="btonDesencriptar" class="boton-secundario" type="button">Desencriptar</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="area-resultado">
+            <div class="contenido-inicio" id="imagenInicio">
+                <img class="imagen-inicio" src="imagenes/Muneco.png" alt="">
+                <h4>Ningún mensaje fue encontrado</h4>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div class="contenido-resultado" id="contenedorTexto">
+                <p id="texto-resultado">texto de prueba</p>
+                <button id="btonCopiar" class="boton-copia">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">Copyright &copy 2022 | Hecho por <a href="https://agueroluca.com.ar/" target="_blank" rel="noreferrer">Agüero Luca</a></p>
+    </footer>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

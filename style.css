@@ -1,0 +1,260 @@
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background: #F3F5FC;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+
+/* Section ingreso del texto*/
+.principal{
+    width: 65%;
+    display: inline-block;
+}
+
+.logo-header{
+    padding: 25px 80px;
+}
+
+.contenido-form{
+    width: 90%;
+
+    height: 80%;
+    margin-left: 8%;
+    /* background: red; */
+}
+
+form{
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input{
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 32px;
+   /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+    text-transform: lowercase;
+}
+
+input::placeholder{
+    font-size: 32px;
+    /* Dark blue/dark-blue-300 */
+     color: #0A3871;
+}
+
+.botones-accion{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.texto-condicion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.texto-condicion p{
+    font-size: 12px;
+    /* Gray/gray-400 */
+    color: #495057;
+    opacity: 0.8;
+}
+
+.boton-primario, .boton-secundario{
+    width: 45%;
+    background: #0A3871;
+    border-radius: 24px;
+    display: inline-block;
+    padding: 24px;
+
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+
+    cursor: pointer;
+}
+
+.boton-secundario{
+    /* Light gray */
+    background: #D8DFE8;
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+    margin-left: 10%;
+}
+
+
+/* Section resutaldo de encriptado-desencriptado */
+.area-resultado{
+    width: 35%;
+    display: inline-block;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.contenido-inicio{
+    height: 100%;
+    border-radius: 32px;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    /* habilitar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+.contenido-inicio img{
+    width: 75%;
+}
+
+.contenido-inicio h4{
+    margin: 15px 0;
+    color: #343A40;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contenido-inicio p{
+    color: #495057;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contenido-resultado{
+    /* disable */
+    display: none;
+    /* display: flex; */
+
+    height: 100%;
+    border-radius: 32px;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+}
+.contenido-resultado p{
+    font-size: 24px;
+    text-align: left;
+    /* Gray/gray-400 */
+    color: #495057;
+    text-transform: lowercase;
+}
+
+.boton-copia{
+    padding: 24px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871; 
+    cursor: pointer;
+    background: none;
+}
+
+/* Section footer*/
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+p a{
+    text-decoration: none;
+    color: #0A3871;
+}
+
+@media  screen and (max-width: 768px) {
+    main{
+       flex-direction: column;
+       padding: 40px;
+    }
+
+    .principal{
+        width: 100%;
+    
+    }
+
+    .logo-header{
+        padding: 0;
+    }
+    
+    .contenido-form{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    form{
+        min-height: 70vh;
+        width: 100%;
+    }
+
+    .boton-primario, .boton-secundario{
+        width: 48%;
+    }
+
+    .boton-secundario{
+        background: none;
+        margin-left: 4%;
+    }
+
+
+    .area-resultado{
+        width: 100%;
+        min-height: max-content;
+        padding: 0;
+        margin-top: 64px;
+    }
+    .contenido-inicio img{
+        display: none;
+    }
+    
+    .contenido-resultado{
+       gap: 32px;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    main{
+        padding: 24px 16px 40px 16px;
+    }
+
+    .boton-primario, .boton-secundario{
+        width: 100%;
+        display: block;
+    }
+
+    .boton-secundario{
+      margin-left: 0;
+      margin-top: 24px;
+    }
+}
