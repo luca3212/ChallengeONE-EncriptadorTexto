@@ -1,4 +1,3 @@
-
 body{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -10,7 +9,6 @@ main{
     min-height: 100vh;
     display: flex;
 }
-
 
 /* Section ingreso del texto*/
 .principal{
@@ -24,37 +22,35 @@ main{
 
 .contenido-form{
     width: 90%;
-
     height: 80%;
     margin-left: 8%;
-    /* background: red; */
 }
 
 form{
     margin: auto;
     width: 80%;
     height: 100%;
-    /* background: green; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-input{
+textarea{
     width: 100%;
     background: none;
     border: none;
     outline: none;
+    font-family: 'Inter';
     font-size: 32px;
-   /* Dark blue/dark-blue-300 */
+    font-weight: 400;
     color: #0A3871;
     text-transform: lowercase;
+    padding: 0;
 }
 
-input::placeholder{
+textarea::placeholder{
     font-size: 32px;
-    /* Dark blue/dark-blue-300 */
-     color: #0A3871;
+    color: #0A3871;
 }
 
 .botones-accion{
@@ -72,7 +68,6 @@ input::placeholder{
 
 .texto-condicion p{
     font-size: 12px;
-    /* Gray/gray-400 */
     color: #495057;
     opacity: 0.8;
 }
@@ -83,26 +78,20 @@ input::placeholder{
     border-radius: 24px;
     display: inline-block;
     padding: 24px;
-
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
     border: none;
-
     cursor: pointer;
 }
 
 .boton-secundario{
-    /* Light gray */
     background: #D8DFE8;
-    /* Dark blue/dark-blue-300 */
     border: 1px solid #0A3871;
-    /* Dark blue/dark-blue-300 */
     color: #0A3871;
     margin-left: 10%;
 }
-
 
 /* Section resutaldo de encriptado-desencriptado */
 .area-resultado{
@@ -117,7 +106,6 @@ input::placeholder{
     border-radius: 32px;
     background: #ffffff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    /* habilitar */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,25 +132,22 @@ input::placeholder{
 }
 
 .contenido-resultado{
-    /* disable */
     display: none;
-    /* display: flex; */
-
     height: 100%;
     border-radius: 32px;
     background: #ffffff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    
     flex-direction: column;
     justify-content: space-between;
     padding: 32px;
 }
+
 .contenido-resultado p{
     font-size: 24px;
     text-align: left;
-    /* Gray/gray-400 */
     color: #495057;
     text-transform: lowercase;
+    overflow-wrap: break-word;
 }
 
 .boton-copia{
@@ -172,7 +157,6 @@ input::placeholder{
     width: 100%;
     font-size: 16px;
     text-align: center;
-    /* Dark blue/dark-blue-300 */
     color: #0A3871; 
     cursor: pointer;
     background: none;
@@ -199,7 +183,6 @@ p a{
 
     .principal{
         width: 100%;
-    
     }
 
     .logo-header{
@@ -226,7 +209,6 @@ p a{
         margin-left: 4%;
     }
 
-
     .area-resultado{
         width: 100%;
         min-height: max-content;
@@ -240,7 +222,6 @@ p a{
     .contenido-resultado{
        gap: 32px;
     }
-    
 }
 
 @media screen and (max-width: 375px) {

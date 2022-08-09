@@ -10,7 +10,7 @@ const ventanaResultado = document.querySelector("#contenedorTexto");
 //variable para guarda el resultado final
 let textoFinal;
 
-//objeto con las claves de encriptamiento
+//Objeto con las claves de encriptamiento
 const llaves = {
   e: "enter",
   i: "imes",
@@ -20,11 +20,13 @@ const llaves = {
 };
 
 function encriptar() {
-  textoFinal = "";
+  const textoIngresado = textoUsuario.value.toLowerCase();
+  textoFinal = textoIngresado;
+
   //comprobacion de que no este vacio el input
-  if (textoUsuario.value.trim() != "") {
-    for (x = 0; x < textoUsuario.value.length; x++) {
-      textoFinal += `${llaves[textoUsuario.value[x]] || textoUsuario.value[x]}`;
+  if (textoIngresado.trim() != "") {
+    for (const propiedad in llaves) {
+      textoFinal = textoFinal.replaceAll(propiedad, llaves[propiedad]);
     }
     mostrarVentana();
   } else {
@@ -33,7 +35,8 @@ function encriptar() {
 }
 
 function desencriptar() {
-  textoFinal = textoUsuario.value;
+  textoFinal = textoUsuario.value.toLowerCase();
+
   //comprobacion de que no este vacio el input
   if (textoUsuario.value.trim() != "") {
     for (const propiedad in llaves) {
